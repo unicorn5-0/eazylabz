@@ -26,14 +26,15 @@ nav .container {
     background-color: #f9f9fc;
     color: #060627;
     border-radius: 25px;
-    --bs-btn-hover-border-color: #f9f9fc;
+    padding: 8px;
+    transition: 0.5s ease-out;
 }
 
 .navbar-toggler {
     border: 2px solid #f9f9fc;
     outline: none;
     border-radius: 6px;
-    padding: 8px;
+    padding: 12px;
     transition: 0.5s ease-out;
 }
 
@@ -50,10 +51,14 @@ nav .container {
 
 
 /* hero */
+.main-heading {
+    font-size: 3.5rem;
+}
+
 .sub-heading {
     font-family: Cascadia Code, sans-serif;
     font-weight: lighter;
-    font-size: 18px;
+    font-size: 1.15rem;
 }
 
 .deco-text {
@@ -66,6 +71,13 @@ nav .container {
     color: #060627;
     border-radius: 25px;
     font-size: 16px;
+    padding: 12px;
+    transition: 0.5s ease-out;
+}
+
+.btn-hero button:hover, .nav-btn button:hover {
+    border: 2px solid #f9f9fc;
+    padding: 12px;
 }
 
 /* cards section */
@@ -87,7 +99,7 @@ nav .container {
 }
 
 .card :hover {
-    border: none;
+    border:  1px solid #151284;
     outline: none;
     background: #060627;
     border-radius: 12px;
@@ -100,7 +112,7 @@ nav .container {
 .card-sub h6, .card-text {
     font-family: Cascadia Code;
     font-weight: lighter;
-    transition: ease-in 1s;
+    transition: 0.5s ease-in;
 }
 
 .card-sub h6 {
@@ -110,4 +122,24 @@ nav .container {
 .card-link {
     color: inherit;
     text-decoration: none;
+}
+
+.cards-carousel {
+    display: none;
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+    .main-heading {
+        font-size: 2.5rem;
+    }
+    
+    .cards-lists {
+        display: none;
+    }
+
+    .cards-carousel {
+        display: initial;
+    }
 }
