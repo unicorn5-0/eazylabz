@@ -1,0 +1,113 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cascadia Mono, sans-serif;
+}
+
+.bg-blue {
+    background-image: linear-gradient(rgb(21,18,132), rgb(21,18,132));
+    color: #f9f9fc;
+}
+
+
+/* navbar */
+nav .container {
+    padding: 20px 40px;
+}
+
+.nav-item a {
+    color: #f9f9fc;
+}
+
+
+.nav-btn button {
+    background-color: #f9f9fc;
+    color: #060627;
+    border-radius: 25px;
+    --bs-btn-hover-border-color: #f9f9fc;
+}
+
+.navbar-toggler {
+    border: 2px solid #f9f9fc;
+    outline: none;
+    border-radius: 6px;
+    padding: 8px;
+    transition: 0.5s ease-out;
+}
+
+.navbar-toggler:hover {
+    padding: 12px;
+    outline: none;
+}
+
+.nav-icon {
+    border-radius: #f9f9fc;
+    width: 24px;
+}
+
+
+
+/* hero */
+.sub-heading {
+    font-family: Cascadia Code, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.deco-text {
+    font-family: Brush Script MT;
+    color: #060627;
+}
+
+.btn-hero button {
+    background-color: #f9f9fc;
+    color: #060627;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+/* cards section */
+.cards-section .container {
+    padding: 20px 40px;
+}
+
+
+.cards-nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card {
+    background: transparent;
+    color: #f9f9fc;
+    border-radius: 12px;
+    border: 2px solid #f9f9fc;
+}
+
+.card :hover {
+    border: none;
+    outline: none;
+    background: #060627;
+    border-radius: 12px;
+}
+
+.card-sub {
+    padding: 0;
+}
+
+.card-sub h6, .card-text {
+    font-family: Cascadia Code;
+    font-weight: lighter;
+    transition: ease-in 1s;
+}
+
+.card-sub h6 {
+    font-size: 0,9em;
+}
+
+.card-link {
+    color: inherit;
+    text-decoration: none;
+}
