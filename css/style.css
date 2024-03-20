@@ -19,15 +19,20 @@ nav .container {
 
 .nav-item a {
     color: #f9f9fc;
+    transition: all 0.3s ease-in-out;
 }
 
+.nav-item a:hover {
+    color: #060627;
+
+}
 
 .nav-btn button {
     background-color: #f9f9fc;
     color: #060627;
     border-radius: 25px;
     padding: 8px;
-    transition: 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .navbar-toggler {
@@ -35,7 +40,7 @@ nav .container {
     outline: none;
     border-radius: 6px;
     padding: 12px;
-    transition: 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .navbar-toggler:hover {
@@ -73,7 +78,7 @@ nav .container {
     border-radius: 25px;
     font-size: 16px;
     padding: 12px;
-    transition: 0.5s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .btn-hero button:hover, .nav-btn button:hover {
@@ -91,6 +96,13 @@ nav .container {
 .cards-nav a {
     color: inherit;
     text-decoration: none;
+    transition: all 0.3s ease-out;
+}
+
+.cards-nav a:hover {
+    padding-bottom: 1%;
+    border-bottom: 2px solid #f9f9fc;
+    border-radius: 2px;
 }
 
 .card {
@@ -99,7 +111,7 @@ nav .container {
     color: #f9f9fc;
     border-radius: 12px;
     border: 2px solid #f9f9fc;
-    transition: 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .card:hover {
@@ -148,7 +160,20 @@ nav .container {
 
     .cards-carousel {
         display: initial;
+        position: relative;
     }
 
-    
+    .carousel-indicators {
+        position: absolute;
+        bottom: -24%;
+    }
+
+    /* .carousel-indicators [data-bs-target] {
+
+        border-radius: 25px;
+    } */
+
+    .nav-rm {
+        display: none;
+    }
 }
