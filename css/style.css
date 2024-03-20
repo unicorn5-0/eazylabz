@@ -149,7 +149,7 @@ nav .container {
 
 /* media queries */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     .main-heading {
         font-size: 2rem;
     }
