@@ -41,6 +41,7 @@ nav .container {
 .navbar-toggler:hover {
     padding: 12px;
     outline: none;
+    background: transparent;
 }
 
 .nav-icon {
@@ -78,6 +79,7 @@ nav .container {
 .btn-hero button:hover, .nav-btn button:hover {
     border: 2px solid #f9f9fc;
     padding: 12px;
+    background: transparent;
 }
 
 /* cards section */
@@ -92,6 +94,7 @@ nav .container {
 }
 
 .card {
+    position: relative;
     background: transparent;
     color: #f9f9fc;
     border-radius: 12px;
@@ -99,24 +102,27 @@ nav .container {
 }
 
 .card :hover {
-    border:  1px solid #151284;
     outline: none;
     background: #060627;
     border-radius: 12px;
+    border-collapse: collapse;
 }
 
-.card-sub {
-    padding: 0;
+.card .div-bottom {
+    position: absolute;
+    bottom: 4%;
 }
+
 
 .card-sub h6, .card-text {
     font-family: Cascadia Code;
     font-weight: lighter;
+    font-size: 0.8125em;
     transition: 0.5s ease-in;
 }
 
 .card-sub h6 {
-    font-size: 0,9em;
+    font-size: 0.675em;
 }
 
 .card-link {
@@ -132,7 +138,7 @@ nav .container {
 
 @media screen and (max-width: 600px) {
     .main-heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .cards-lists {
@@ -142,4 +148,6 @@ nav .container {
     .cards-carousel {
         display: initial;
     }
+
+    
 }
