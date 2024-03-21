@@ -196,11 +196,52 @@ nav .container {
 
 .form-control {
     background: transparent;
+    border-radius: 6px;
 }
 
 .modal-body form input:focus {
     color: #060627;
     background-color: #f9f9fc;
+}
+
+#message-text {
+    height: 10rem;
+}
+
+.modal-footer {
+    border: 0;
+}
+
+.modal-btn-c {
+    background-color: #f9f9fc;
+    color: #151284;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.modal-btn-c:hover {
+    background-color: #151284;
+    outline: none;
+    border: 0px;
+    color: #f9f9fc;
+    padding: 8px;
+}
+
+.modal-btn-s {
+    background-color: #151284;
+    border-radius: 6px;
+    color: #f9f9fc;
+    border-color: #151284;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-btn-s:hover {
+    background-color: #f9f9fc;
+    color: #151284;
+    padding: 8px;
+    outline: none;
+    border: 0px;
 }
 
 
