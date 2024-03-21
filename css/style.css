@@ -7,7 +7,7 @@
 }
 
 .bg-blue {
-    background-image: linear-gradient(rgb(21,18,132), rgb(21,18,132));
+    background-image: linear-gradient(rgba(21,18,132), rgb(21,18,132));
     color: #f9f9fc;
 }
 
@@ -98,15 +98,12 @@ nav .container {
 
 
 .sub-heading {
-    font-family: Cascadia Code, sans-serif;
-    font-weight: lighter;
-    font-size: 1.15rem;
+    font-family: Brush Script MT, sans-serif;
+    font-size: 2rem;
+    color: #f9f9fc;
 }
 
-.deco-text {
-    font-family: Brush Script MT;
-    color: #060627;
-}
+
 
 .btn-hero button {
     background-color: #f9f9fc;
@@ -136,7 +133,7 @@ nav .container {
 }
 
 .cards-nav a:hover {
-    padding-bottom: 1%;
+    padding-bottom: 0.3%;
     border-bottom: 2px solid #f9f9fc;
     border-radius: 2px;
 }
@@ -182,6 +179,30 @@ nav .container {
 .cards-carousel {
     display: none;
 }
+
+/* modal */
+.modal-header .btn-close {
+    color: #f9f9fc;
+}
+
+.modal-content {
+    background-color: #060627;
+    border-radius: 25px;
+}
+
+.modal-body form {
+    color: #f9f9fc;
+}
+
+.form-control {
+    background: transparent;
+}
+
+.modal-body form input:focus {
+    color: #060627;
+    background-color: #f9f9fc;
+}
+
 
 /* media queries */
 
