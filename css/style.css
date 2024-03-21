@@ -1,18 +1,40 @@
+@font-face {
+    font-family: "Cascadia Mono";
+    src: url("/css/fonts/cascadia-mono/CascadiaMono.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("/css/fonts/cascadia-code/Cascadia.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "Brush Script MT";
+    src: url("/css/fonts/Brush-Script-MT/BRUSHSCI.TTF") format("ttf"),
+         url("/css/fonts/Brush-Script-MT/BrushScriptStd.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Ersa ITC";
+    src: url("/css/fonts/Ersa-Font/eras-bold-5871820c913a2.otf") format("otf"),
+         url("/css/fonts/Ersa-Font/eras-bold-5871825645ec8.otf") format("otf"),
+         url("/css/fonts/Ersa-Font/eras-book-587181c4d21d4.otf") format("otf"),
+         url("/css/fonts/Ersa-Font/eras-demi-587182767b329.otf") format("0tf"),
+         url("/css/fonts/Ersa-Font/eras-light-5871822a2e706.otf") format("otf");
+}
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cascadia Mono, sans-serif;
+    font-family: Cascadia Mono, monospace;
 }
 
 .bg-blue {
     background-image: linear-gradient(rgba(21,18,132), rgb(21,18,132));
     color: #f9f9fc;
 }
-
-
-
 
 /* navbar */
 .navbar {
@@ -98,7 +120,7 @@ nav .container {
 
 
 .sub-heading {
-    font-family: Brush Script MT, sans-serif;
+    font-family: Brush Script MT, script;
     font-size: 2rem;
     color: #f9f9fc;
 }
@@ -161,7 +183,7 @@ nav .container {
 
 
 .card-sub h6, .card-text {
-    font-family: Cascadia Code;
+    font-family: Cascadia Code, monospace;
     font-weight: lighter;
     font-size: 0.8125em;
     transition: 0.5s ease-in;
