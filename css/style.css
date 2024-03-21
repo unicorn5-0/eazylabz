@@ -12,7 +12,13 @@
 }
 
 
+
+
 /* navbar */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
 nav .container {
     padding: 20px 40px;
 }
@@ -57,9 +63,39 @@ nav .container {
 
 
 /* hero */
-.main-heading {
-    font-size: 3.5rem;
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.input-cursor {
+    display: inline-block;
+    width: 0.125rem;
+    height: 3.5rem;
+    background-color: #f9f9fc;
+    margin-left: 0.5rem;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+
+
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
+
+.main-heading {
+    position: relative;
+    font-size: 3.5rem;
+    
+}
+
+
 
 .sub-heading {
     font-family: Cascadia Code, sans-serif;
@@ -150,8 +186,13 @@ nav .container {
 /* media queries */
 
 @media screen and (max-width: 760px) {
+
     .main-heading {
         font-size: 2rem;
+    }
+
+    .input-cursor {
+        height: 2rem;
     }
     
     .cards-lists {
@@ -173,7 +214,29 @@ nav .container {
         border-radius: 25px;
     } */
 
+    .bg-alt {
+        background-color: #060627;
+    }
+
+    .nav-item a:hover {
+        color: #f9f9fc;
+    }
+
     .nav-rm {
         display: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-heading {
+        font-size: 1.65rem;
+    }
+
+    .input-cursor {
+        height: 1.65rem;
     }
 }

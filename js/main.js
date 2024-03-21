@@ -44,5 +44,11 @@ var wordflick = function () {
 
 $(document).ready(function () {
   wordflick();
+
+  $('.navbar-toggler').click(function () {
+
+    $('.navbar').toggleClass('bg-alt')
+    $('.navbar').toggleClass('mb-4')
+  })
 });
 
