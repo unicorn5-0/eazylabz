@@ -1,26 +1,26 @@
 @font-face {
     font-family: "Cascadia Mono";
-    src: url("/css/fonts/cascadia-mono/CascadiaMono.ttf") format("ttf");
+    src: url("./fonts/cascadia-mono/CascadiaMono.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Cascadia Code";
-    src: url("/css/fonts/cascadia-code/Cascadia.ttf") format("ttf");
+    src: url("./fonts/cascadia-code/Cascadia.ttf") format("ttf");
 }
 
 @font-face {
     font-family: "Brush Script MT";
-    src: url("/css/fonts/Brush-Script-MT/BRUSHSCI.TTF") format("ttf"),
-         url("/css/fonts/Brush-Script-MT/BrushScriptStd.otf") format("otf");
+    src: url("./fonts/Brush-Script-MT/BRUSHSCI.TTF") format("ttf"),
+         url(",/fonts/Brush-Script-MT/BrushScriptStd.otf") format("otf");
 }
 
 @font-face {
     font-family: "Ersa ITC";
-    src: url("/css/fonts/Ersa-Font/eras-bold-5871820c913a2.otf") format("otf"),
-         url("/css/fonts/Ersa-Font/eras-bold-5871825645ec8.otf") format("otf"),
-         url("/css/fonts/Ersa-Font/eras-book-587181c4d21d4.otf") format("otf"),
-         url("/css/fonts/Ersa-Font/eras-demi-587182767b329.otf") format("0tf"),
-         url("/css/fonts/Ersa-Font/eras-light-5871822a2e706.otf") format("otf");
+    src: url("./fonts/Ersa-Font/eras-bold-5871820c913a2.otf") format("otf"),
+         url("./fonts/Ersa-Font/eras-bold-5871825645ec8.otf") format("otf"),
+         url("./fonts/Ersa-Font/eras-book-587181c4d21d4.otf") format("otf"),
+         url("./fonts/Ersa-Font/eras-demi-587182767b329.otf") format("0tf"),
+         url("./fonts/Ersa-Font/eras-light-5871822a2e706.otf") format("otf");
 }
 
 * {
@@ -176,6 +176,10 @@ nav .container {
     border-collapse: collapse;
 }
 
+.views-cards .card:hover {
+    background: #151284;
+}
+
 .card .div-bottom {
     position: absolute;
     bottom: 4%;
@@ -237,6 +241,7 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
 }
 
 .modal-header .btn-close {
+    filter: brightness(0) invert(1);
     position: absolute;
     right: 8%;
     --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(21,18,132, 0.25)

@@ -54,14 +54,14 @@
         </div>
         <h2 class="sub-heading mb-3">We are innovation!</h2>
         <div class="btn-hero">
-            <button type="button" class="btn btn-sm"data-bs-toggle="modal" data-bs-target="#contactModal" >Contact Us</button>
+            <button type="button" class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#contactModal" >Contact Us</button>
         </div>
     </section>
     <!-- cards section -->
     <section class="cards-section">
         <div class="cards-nav d-flex mx-auto w-75 p-0 my-3 justify-content-between">
           <a href="#">Case Studies</a>
-          <a href="#">View All</a>
+          <a href="#"  data-bs-toggle="modal" data-bs-target="#viewsModal" role="button" aria-controls="modal">View All</a>
         </div>
         <!-- cards list on laptops -->
         <div class="cards container cards-lists">
@@ -238,7 +238,7 @@
         <div class="modal-content">
           <div class="modal-header mx-auto text-center">
             <h1 class="modal-title fs-5 " id="contactModalLabel">Let's Work Together</h1>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <form>
@@ -271,6 +271,99 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Full screen modal -->
+    <div class="modal" id="viewsModal" style="display: none;">
+      <div class="modal-dialog modal-lg modal-fullscreen">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Case studies</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- cards -->
+            <div class="cards container">
+              <div class="row views-cards gx-5">
+                  <div class="col-md-4 mb-3">
+                      <div class="card" style="height: 13rem;">
+                          <div class="card-body">
+                            <div class="card-sub container-fluid my-3 p-0">
+                              <div class="row">
+                                  <div class="col">
+                                      <h6 class="project-cat card-subtitle text-start">Marketing</h6>
+                                  </div>
+                                  <div class="col">
+                                      <h6 class="project=type card-subtitle text-end">Website</h6>
+                                  </div>
+                              </div>
+                            </div>
+                            <h5 class="card-title">NeoCampZw</h5>
+                            <p class="card-text">Team building website.</p>
+                            <div class="div-bottom my-3">
+                              <a href="#" class="card-link">View Case Study</a>
+                              <a href="#" class="card-link">
+                                <img src="images/arrow-right.svg" alt="arrow right">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <div class="card" style="height: 13rem;">
+                          <div class="card-body">
+                            <div class="card-sub container-fluid my-3 p-0">
+                              <div class="row">
+                                  <div class="col">
+                                      <h6 class="project-cat card-subtitle text-start">Software Development</h6>
+                                  </div>
+                                  <div class="col">
+                                      <h6 class="project=type card-subtitle text-end">Website</h6>
+                                  </div>
+                              </div>
+                            </div>
+                            <h5 class="card-title">Google</h5>
+                            <p class="card-text">Using creative design to show how sexy it can get to be a nerd.</p>
+                            <div class="div-bottom my-3">
+                              <a href="#" class="card-link">View Case Study</a>
+                              <a href="#" class="card-link">
+                                <img src="images/arrow-right.svg" alt="arrow right">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                      <div class="card" style="height: 13rem;">
+                          <div class="card-body">
+                            <div class="card-sub container-fluid my-3 p-0">
+                              <div class="row">
+                                  <div class="col">
+                                      <h6 class="project-cat card-subtitle text-start">Marketing</h6>
+                                  </div>
+                                  <div class="col">
+                                      <h6 class="project=type card-subtitle text-end">Website</h6>
+                                  </div>
+                              </div>
+                            </div>
+                            <h5 class="card-title">EazyLabz</h5>
+                            <p class="card-text">We are a simple brand keeping it simple, creating brands we want to see.</p>
+                            <div class="div-bottom my-3">
+                              <a href="#" class="card-link">View Case Study</a>
+                              <a href="#" class="card-link">
+                                <img src="images/arrow-right.svg" alt="arrow right">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+              </div>
+            </div>
+            <!-- cards carousel on mobile -->
+          </div>
+        </div>
+      </div>
+
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
