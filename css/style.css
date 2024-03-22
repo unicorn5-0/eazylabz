@@ -270,7 +270,7 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
     color: #f9f9fc;
     border-radius: 6px;
     transition: all 0.3s ease-in-out;
-    
+    border-color: #f9f9fc;
 }
 
 .modal-btn:hover {
