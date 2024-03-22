@@ -276,6 +276,11 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
     border: 0px;
 }
 
+/* maintanance site */
+.barrier-icon {
+  filter: brightness(0) invert(1);
+  height: 12rem;
+}
 
 
 /* media queries */
