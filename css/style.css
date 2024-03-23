@@ -1,34 +1,9 @@
-@font-face {
-    font-family: "Cascadia Mono";
-    src: url("./fonts/cascadia-mono/CascadiaMono.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Cascadia Code";
-    src: url("./fonts/cascadia-code/Cascadia.ttf") format("ttf");
-}
-
-@font-face {
-    font-family: "Brush Script MT";
-    src: url("./fonts/Brush-Script-MT/BRUSHSCI.TTF") format("ttf"),
-         url(",/fonts/Brush-Script-MT/BrushScriptStd.otf") format("otf");
-}
-
-@font-face {
-    font-family: "Ersa ITC";
-    src: url("./fonts/Ersa-Font/eras-bold-5871820c913a2.otf") format("otf"),
-         url("./fonts/Ersa-Font/eras-bold-5871825645ec8.otf") format("otf"),
-         url("./fonts/Ersa-Font/eras-book-587181c4d21d4.otf") format("otf"),
-         url("./fonts/Ersa-Font/eras-demi-587182767b329.otf") format("0tf"),
-         url("./fonts/Ersa-Font/eras-light-5871822a2e706.otf") format("otf");
-}
-
 * {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Cascadia Mono, monospace;
+    font-family: 'Cascadia Code', sans-serif;
 }
 
 .bg-blue {
@@ -118,13 +93,11 @@ nav .container {
 }
 
 
-
 .sub-heading {
-    font-family: Brush Script MT, script;
+    font-family: "Brush Script MT", cursive;
     font-size: 2rem;
     color: #f9f9fc;
 }
-
 
 
 .btn-hero button {
@@ -187,7 +160,7 @@ nav .container {
 
 
 .card-sub h6, .card-text {
-    font-family: Cascadia Code, monospace;
+    font-family: 'Cascadia Mono', sans-serif;
     font-weight: lighter;
     font-size: 0.8125em;
     transition: 0.5s ease-in;
