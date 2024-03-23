@@ -1,9 +1,16 @@
+@font-face {
+    font-family: 'Cascadia Code Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cascadia Code Regular'), url('Cascadia.woff') format('woff');
+    }
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cascadia Code', sans-serif;
+    font-family: 'Cascadia Code Regular', sans-serif;
 }
 
 html {
