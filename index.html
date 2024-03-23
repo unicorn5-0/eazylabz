@@ -243,25 +243,27 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <!-- error msge -->
-          <p id="form-message" class="text-center"></p>
+          <div class="modal-message">
+            <p id="form-message" class="text-center mb-0 mt-3" style="display: none;"></p>
+          </div>
           <div class="modal-body">
             <form id="contactForm">
               <div class="mb-3 form-floating">
-                <label for="full-name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="f-name">
+                <label for="full-name" class="form-label">Full Name*</label>
+                <input type="text" class="form-control" id="f-name" required>
               </div>
               <div class="mb-3 form-floating">
-                <label for="company-name">Company Name</label>
-                <input type="text" class="form-control" id="c-name">
+                <label for="company-name">Company Name*</label>
+                <input type="text" class="form-control" id="c-name" required>
               </div>
               <div class=" mb-3 modal-contacts d-flex gap-3">
                 <div class="form-floating w-50 ">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email"> 
+                  <label for="email">Email*</label>
+                  <input type="email" class="form-control" id="email" required> 
                 </div>
                 <div class=" form-floating w-50">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="form-control" id="contact">
+                  <label for="phone">Phone*</label>
+                  <input type="text" class="form-control" id="contact" required>
                 </div>
               </div>
               <div class="form-floating">

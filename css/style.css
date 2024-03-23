@@ -94,7 +94,7 @@ nav .container {
 
 
 .sub-heading {
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Brush Script MT', cursive;
     font-size: 2rem;
     color: #f9f9fc;
 }
@@ -228,6 +228,10 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
 .modal-body form input:focus {
     color: #060627;
     background-color: #f9f9fc;
+}
+
+#form-message {
+    transition: all 0.6s ease-in-out;
 }
 
 #message-text {

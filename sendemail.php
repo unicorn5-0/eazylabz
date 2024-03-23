@@ -1,15 +1,17 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    print("lets go1")
+    print("lets go1");
   $name = $_POST["name"];
+  $company = $_POST["company"];
   $email = $_POST["email"];
+  $contact = $_POST["contact"];
   $message = $_POST["message"];
 
   // Your recipient email address
   $recipient = "info@eazylabz.com";
   $subject = "Contact Us Form Submission - " . $name;
-  $body = "Name: " . $name . "\nEmail: " . $email . "\nMessage:\n" . $message;
+  $body = "Name: " . $name . "\nCompany: " . $company . "\nEmail: " . $email . "\nContact: " . $contact . "\nMessage:\n" . $message;
 
   $headers = "From: " . $email . "\r\n";
   $headers .= "Reply-To: " . $email . "\r\n";
@@ -22,4 +24,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-?>
