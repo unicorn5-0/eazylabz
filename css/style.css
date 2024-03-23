@@ -6,6 +6,10 @@
     font-family: 'Cascadia Code', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .bg-blue {
     background-image: linear-gradient(rgb(21,18,132), rgb(21,18,132));
     color: #f9f9fc;
@@ -262,6 +266,19 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
 .barrier-icon {
   filter: brightness(0) invert(1);
   height: 12rem;
+}
+
+/* pagination */
+.page-item a {
+    background-color: #f9f9fc;
+    color: #060627;
+    border-color: #f9f9fc;
+}
+
+.page-item.active span{
+    background-color: #151284;
+    color: #f9f9fc;
+    border-color: #151284;
 }
 
 
