@@ -1,12 +1,4 @@
 @font-face {
-    font-family: Cascadia Mono;
-    font-variant: normal;
-    src:  url('./fonts/cascadia-mono/CascadiaMono.woff2') format('woff2'), /* Super Modern Browsers */
-          url('./fonts/cascadia-mono/CascadiaMono.woff') format('woff'), /* Pretty Modern Browsers */
-          url('./fonts/cascadia-mono/CascadiaMono.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
-
-@font-face {
     font-family: Brush Script MT;
     src: url('/css/fonts/Brush-Script-MT/BRUSHSCI.woff2');
 }
@@ -177,8 +169,7 @@ nav .container {
 
 
 .card-sub h6, .card-text {
-    font-family: 'Cascadia Mono', sans-serif;
-    font-weight: lighter;
+    font-weight: light;
     font-size: 0.8125em;
     transition: 0.5s ease-in;
 }
