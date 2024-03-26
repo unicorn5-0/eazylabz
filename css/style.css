@@ -17,6 +17,31 @@ html {
     scroll-behavior: smooth;
 }
 
+a, .btn{
+    position: relative;
+    
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+  } 
+  
+  /* ---- particles.js container ---- */
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
+    
+  } 
+  
+
+  
+  
+
 .bg-blue {
     background-image: linear-gradient(rgb(21,18,132), rgb(21,18,132));
     color: #f9f9fc;
