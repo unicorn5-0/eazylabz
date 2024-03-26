@@ -1,6 +1,9 @@
 @font-face {
     font-family: Cascadia Mono;
-    src: url('/css/fonts/cascadia-mono/CascadiaMono.woff2');
+    font-variant: normal;
+    src:  url('./fonts/cascadia-mono/CascadiaMono.woff2') format('woff2'), /* Super Modern Browsers */
+          url('./fonts/cascadia-mono/CascadiaMono.woff') format('woff'), /* Pretty Modern Browsers */
+          url('./fonts/cascadia-mono/CascadiaMono.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 @font-face {
