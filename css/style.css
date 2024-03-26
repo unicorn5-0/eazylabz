@@ -1,16 +1,9 @@
-@font-face {
-    font-family: 'Cascadia Code Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Cascadia Code Regular'), url('Cascadia.woff') format('woff');
-    }
-
 * {
     border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Cascadia Code Regular', sans-serif;
+    font-family: 'Cascadia Code', sans-serif;
 }
 
 html {
@@ -82,7 +75,7 @@ nav .container {
     width: 0.125rem;
     height: 3.5rem;
     background-color: #f9f9fc;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
 }
 
 @keyframes blink {
@@ -105,7 +98,7 @@ nav .container {
 
 
 .sub-heading {
-    font-family: 'Brush Script MT', cursive;
+    font-family: 'Brush Script MT';
     font-size: 2rem;
     color: #f9f9fc;
 }
@@ -289,20 +282,56 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
 }
 
 
-/* media queries */
+@media (max-width: 900px), (min-height: 1024px) {
+    .navbar .container {
+        width: 100%;
+    }
+    .cards-lists {
+        display: none;
+    }
+
+    .cards-carousel {
+        display: block;
+    }
+
+    .cards-section {
+        margin-top: 2rem;
+    }
+
+    .carousel-indicators {
+        bottom: -30%;
+    }
+
+
+}
+
+@media (max-width: 1114px), (max-height: 715px) {
+    .card {
+        height: 16rem;
+    }
+}
 
 @media screen and (max-width: 760px) {
 
     .main-heading {
         font-size: 2rem;
     }
-
-    .input-cursor {
-        height: 2rem;
-    }
     
     .cards-lists {
         display: none;
+    }
+
+    .cards-section {
+        margin-top: 1.5rem;
+    }
+
+
+    .cards-nav {
+        margin: 1.5rem auto;
+    }
+
+    .card-title {
+        font-size: 1rem;
     }
 
     .cards-carousel {
@@ -335,6 +364,8 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
     .navbar-toggler:focus {
         box-shadow: none;
     }
+
+    
 }
 
 @media screen and (max-width: 450px) {
@@ -343,6 +374,12 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
     }
 
     .input-cursor {
-        height: 1.65rem;
+        height: 1.75rem;
+    }
+}
+
+@media screen and (min-width: 400px), (min-height: 800px) {
+    .hero {
+        margin-top: 1.25rem;
     }
 }
