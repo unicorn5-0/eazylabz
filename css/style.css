@@ -1,6 +1,8 @@
 @font-face {
-    font-family: Brush Script MT;
-    src: url('/css/fonts/Brush-Script-MT/BRUSHSCI.woff2');
+    font-family: 'Brush Script MT';
+    src: url('./fonts/Brush-Script-MT/BRUSHSCI.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/Brush-Script-MT/BRUSHSCI.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/Brush-Script-MT/BRUSHSCI.TTF')  format('truetype'); /* Safari, Android, iOS */
 }
 
 * {
@@ -369,6 +371,7 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
         box-shadow: none;
     }
 
+   
     
 }
 
