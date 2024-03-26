@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Cascadia Mono;
+    src: url('/css/fonts/cascadia-mono/CascadiaMono.woff2');
+}
+
+@font-face {
+    font-family: Brush Script MT;
+    src: url('/css/fonts/Brush-Script-MT/BRUSHSCI.woff2');
+}
+
 * {
     border: 0;
     margin: 0;
