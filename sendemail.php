@@ -1,7 +1,6 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    print("lets go1");
   $name = $_POST["name"];
   $company = $_POST["company"];
   $email = $_POST["email"];

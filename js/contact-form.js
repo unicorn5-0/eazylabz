@@ -14,6 +14,7 @@ $(document).ready(function() {
           $("#form-message").css("display", "none")
         }, 5000);
       }
+      
       // Basic validation (more can be added)
       if (!name || !company || !email || !contact || !message) {
         $("#form-message").text("Please fill in all required fields").css({"display": "block", "color": "red"});
