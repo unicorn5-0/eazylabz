@@ -409,7 +409,7 @@ label:has(+ .form-control:focus), label:has(+ textarea:focus) {
     }
 }
 
-@media screen and (min-width: 400px), (min-height: 800px) {
+@media screen and (min-width: 400px) and (max-width: 900px), (min-height: 800px) {
     .hero {
         margin-top: 1.25rem;
     }
